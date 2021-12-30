@@ -74,7 +74,7 @@ Click order button
 Submit the order
   Wait Until Keyword Succeeds  2 min  5 sec  Click order button
 
- Store the receipt as a PDF file
+Store the receipt as a PDF file
    [Arguments]  ${orderNo}
    ${outerHTML}=  Get Element Attribute  css=#receipt  outerHTML
    ${path}=  Set Variable  ${OUTPUT_DIR}${/}Receipts${/}OrderNo_${orderNo}.pdf
