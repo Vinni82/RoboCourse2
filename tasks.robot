@@ -34,7 +34,7 @@ Order robots from RobotSpareBin Industries Inc
 *** Keywords ***
 Open the robot order website
   ${url}=  Get Secret  cre
-  Open Browser  ${url}[url]  browser=gc 
+  Open Available Browser  ${url}[url]
   Title Should Be  RobotSpareBin Industries Inc. - Intranet
 
 Ask for user input
