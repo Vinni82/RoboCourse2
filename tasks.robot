@@ -78,7 +78,7 @@ Store the receipt as a PDF file
    [Arguments]  ${orderNo}
    ${outerHTML}=  Get Element Attribute  css=#receipt  outerHTML
    ${path}=  Set Variable  ${OUTPUT_DIR}${/}Receipts${/}OrderNo_${orderNo}.pdf
-   Html To Pdf  ${outerHTML}  ${OUTPUT_DIR}${/}Receipts${/}OrderNo_${orderNo}.pdf
+   Html To Pdf  ${outerHTML}  ${path}
    [Return]  ${path}
 
 Take a screenshot of the robot
